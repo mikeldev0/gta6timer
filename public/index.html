@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Live countdown to the Grand Theft Auto VI release date. Stay updated with the official GTA 6 release timer.">
+    <meta name="keywords" content="GTA 6, GTA VI, Grand Theft Auto 6, countdown, release date, timer">
+    <meta name="author" content="GTA 6 Timer">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mikeldev0.github.io/gta6timer/">
+    <meta property="og:title" content="GTA VI Countdown Timer">
+    <meta property="og:description" content="Live countdown to the Grand Theft Auto VI release date.">
+    <meta property="og:image" content="https://mikeldev0.github.io/gta6timer/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mikeldev0.github.io/gta6timer/">
+    <meta property="twitter:title" content="GTA VI Countdown Timer">
+    <meta property="twitter:description" content="Live countdown to the Grand Theft Auto VI release date.">
+    <meta property="twitter:image" content="https://mikeldev0.github.io/gta6timer/og-image.png">
+    
+    <title>GTA VI Countdown Timer</title>
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱️</text></svg>">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GTA VI Countdown</h1>
+            <button id="theme-toggle" aria-label="Toggle dark mode" class="theme-toggle">
+                <span class="theme-icon" aria-hidden="true">🌙</span>
+            </button>
+        </header>
+        
+        <main>
+            <div class="countdown" role="timer" aria-live="polite" aria-atomic="true">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">0</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">0</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">0</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">0</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            
+            <div class="release-date">
+                <p id="release-info">Release Date: <time id="release-time" datetime="">Loading...</time></p>
+            </div>
+        </main>
+        
+        <footer>
+            <p class="disclaimer">Unofficial fan countdown. Release date subject to change.</p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
