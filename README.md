@@ -53,7 +53,7 @@ The site includes a gradient background by default. To use the official GTA VI h
 
 1. Download the image from: `https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FheroKeyArt.acb9b343.jpg&w=3840&q=100`
 2. Save it as `public/hero-bg.jpg` or `public/hero-bg.png`
-3. Update `public/styles.css` line 28 to reference your image:
+3. Update `public/styles.css` line 29 to reference your image:
    ```css
    background-image: url('hero-bg.jpg');
    ```
