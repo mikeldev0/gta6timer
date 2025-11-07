@@ -19,6 +19,11 @@
     --overlay-opacity: 0.5;
 }
 
+@font-face {
+  font-family: 'GTAVI font';
+  src: url("GTAVI\ font.otf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +31,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'GTAVI font', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: var(--bg-color);
     background-image: url('hero-bg.svg');
     background-size: cover;
