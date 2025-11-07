@@ -1,10 +1,11 @@
-const CACHE_NAME = 'gta6timer-v1';
+const CACHE_NAME = 'gta6timer-v2';
 const urlsToCache = [
     './',
     './index.html',
     './styles.css',
     './app.js',
-    './config.json'
+    './config.json',
+    './hero-bg.svg'
 ];
 
 // Install event - cache resources
