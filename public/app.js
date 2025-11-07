@@ -49,7 +49,7 @@ async function loadConfig() {
     }
 }
 
-function formatTimeUnit(value) {
+function formatTimeValue(value) {
     return value.toString().padStart(2, '0');
 }
 
@@ -71,10 +71,10 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-    document.getElementById('days').textContent = formatTimeUnit(days);
-    document.getElementById('hours').textContent = formatTimeUnit(hours);
-    document.getElementById('minutes').textContent = formatTimeUnit(minutes);
-    document.getElementById('seconds').textContent = formatTimeUnit(seconds);
+    document.getElementById('days').textContent = formatTimeValue(days);
+    document.getElementById('hours').textContent = formatTimeValue(hours);
+    document.getElementById('minutes').textContent = formatTimeValue(minutes);
+    document.getElementById('seconds').textContent = formatTimeValue(seconds);
 }
 
 function formatReleaseDate(dateString) {
